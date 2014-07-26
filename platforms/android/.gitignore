@@ -2,21 +2,9 @@
 
 ant-build
 ant-gen
-assets
-cordova
-CordovaLib
 libs
 platform_www
-src
 .project
-AndroidManifest.xml
-build.xml
 custom_rules.xml
 local.project.txt
 proguard-project.txt
-project.properties
-
-#res
-ic_*.png
-res/values
-res/xml
