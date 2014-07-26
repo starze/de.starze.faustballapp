@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FaustballApp</title>
+		
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+ 		
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+		
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="js/jquery.rwdImageMaps.min.js"></script>
+		
+		<script>
+          function openExternal(elem) {
+            window.open(elem.href, '_system');
+            return false; // Prevent execution of the default onClick handler 
+          }
+        </script>
+    </head>
+    <body>
+		<img id="fbimg" src="img/Faustball-APP-Bild.jpg" width="826" height="1180" usemap="#mymap"/>
+		<map name="mymap">
+		<area shape="poly" coords="2,177,414,176,412,471,368,471,335,476,303,481,271,491,240,500,212,512,178,530,153,550,125,574,107,599,92,628,83,660,81,679,1,677" alt="http://www.faustball-ergebnisse.de" href="http://www.faustball-ergebnisse.de" onClick="javascript:return openExternal(this)" />
+		<area shape="poly" coords="415,177,827,177,826,679,734,677,730,654,717,622,704,597,687,574,661,550,630,530,595,511,565,498,529,486,491,478,440,473,412,470" alt="http://www.dfbl.de/" href="http://www.dfbl.de/" onClick="javascript:return openExternal(this)" />
+		<area shape="poly" coords="2,678,81,679,84,709,89,728,96,745,105,761,129,791,149,810,178,830,207,847,234,860,273,875,320,888,361,891,372,891,414,894,413,1179,0,1179,0,1177,0,678" alt="http://www.faustballregionalgruppe-sued.de/" href="http://www.faustballregionalgruppe-sued.de/"  onClick="javascript:return openExternal(this)" />
+		<area shape="poly" coords="734,678,826,680,826,1179,414,1179,413,893,442,893,477,890,503,884,534,876,573,868,595,854,634,835,656,819,683,792,708,762,723,733,731,706,733,678" alt="http://52143661.swh.strato-hosting.eu/Vereinsdaten/" href="http://52143661.swh.strato-hosting.eu/Vereinsdaten/"  onClick="javascript:return openExternal(this)"  />
+		<area shape="poly" coords="412,472,454,475,482,478,518,485,549,493,576,505,605,518,629,530,657,547,676,568,695,582,712,610,726,640,731,660,735,680,732,708,723,733,711,758,695,781,676,803,652,825,623,839,597,851,567,865,529,878,495,884,461,894,429,894,411,895,368,890,330,890,302,881,268,875,236,863,215,849,190,838,168,823,148,810,127,792,102,759,90,732,82,703,80,678,86,641,103,602,129,569,159,544,196,520,246,499,302,482,355,472,395,471,412,471" alt="http://stb-faustball.de" href="http://stb-faustball.de"  onClick="javascript:return openExternal(this)" />
+		</map>
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+		
+		<script type="text/javascript">
+		   $(document).ready(function (e) {
+				$('img[usemap]').rwdImageMaps();
+				$('#fbimg').width("100%");
+				$('#fbimg').height("100%");
+			});
+        </script>
+    </body>
+</html>
