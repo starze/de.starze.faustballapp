@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vereinsliste</title>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        
+        <meta charset="utf-8" />
+            
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(document).ready(function (e) {
+                //jsonp hack see: http://www.jquery-tutorial.net/ajax/requesting-a-file-from-a-different-domain-using-jsonp/
+                var url="http://52143661.swh.strato-hosting.eu/Vereinsdaten/clubs2json.php";
+                $.getJSON( url + "?callback=?", function( clubList ) {
+                            
+                    clubList.sort(function SortByClub(a, b){
+                        var aName = a.club.toLowerCase();
+                        var bName = b.club.toLowerCase(); 
+                        return ((aName < bName) ? -1 : ((aName > bName) ? 1 : 0));
+                    });
+                      
+                    $.each(clubList, function(clubId){
+                        var club = clubList[clubId];
+                                                                 
+                        if (club.site !== ''){
+                            $("#clubListul").append('<a href="' + club.site + '"><li>' + club.club + '</li></a>');
+                        } else {
+                            $("#clubListul").append('<li>' + club.club + '</li>');
+                        }
+                    });
+                });
+            });
+        </script>
+            
+        <h1>Vereinsliste</h1>
+        <ul id='clubListul'></ul>
+
+            
+        <h2>Mein Verein ist nicht dabei?</h2>
+        Sende einfach eine E-Mail an <a href="mailto:oeffentlichkeitsarbeit@stb-faustball.de">oeffentlichkeitsarbeit@stb-faustball.de</a>
+
+    </body>
+</html>

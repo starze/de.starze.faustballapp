@@ -1,5 +1,6 @@
 #ignore all but res directory
 
+res/xml
 assets
 ant-build
 ant-gen
