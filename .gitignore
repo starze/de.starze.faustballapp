@@ -4,6 +4,9 @@
 plugins/*
 merges
 hooks
+.idea
+node_modules
+platforms/*
 
 # built application files
 *.apk

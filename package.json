@@ -1,0 +1,17 @@
+{
+    "name": "de.starze.faustballapp",
+    "version": "0.3.0",
+    "displayName": "FaustballApp",
+    "cordova": {
+        "platforms": [
+            "android"
+        ],
+        "plugins": {
+            "cordova-plugin-inappbrowser": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "~6.2.3",
+        "cordova-plugin-inappbrowser": "^1.7.1"
+    }
+}
