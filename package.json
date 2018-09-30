@@ -11,7 +11,7 @@
         }
     },
     "dependencies": {
-        "cordova-android": "~6.2.3",
-        "cordova-plugin-inappbrowser": "^1.7.1"
+        "cordova-android": "^7.1.1",
+        "cordova-plugin-inappbrowser": "^3.0.0"
     }
 }
