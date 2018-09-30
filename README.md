@@ -1,6 +1,6 @@
 # FaustballApp
 
-FaustballApp is a Cordova based Android-App. It is linking to all relevant sites of faustball-schwaben. I really appreciate each suggestsion for improvement. Pull requests are explicitly whished. 
+FaustballApp is a Cordova based Android-App. It is linking to all relevant sites of faustball-schwaben. I really appreciate each suggestion for improvement. Pull requests are explicitly whished.
 
 
 ## Build FaustballApp
