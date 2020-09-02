@@ -1,4 +1,6 @@
-# ANDROID / ECLIPSE
+# private data
+.env
+starzes-release-key.keystore
 
 # unnecessary folders
 plugins/*
@@ -11,49 +13,3 @@ platforms/*
 # built application files
 *.apk
 *.ap_
-
-# files for the dex VM
-*.dex
-
-# Java class files
-*.class
-
-# generated files - android project subfolder
-Android/bin/
-Android/gen/
-Android/assets/
-
-# generated files
-bin/
-gen/
-
-# Local configuration file (sdk path, etc)
-local.properties
-
-# IOS / Xcode
-build/*
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-*.xcworkspace
-!default.xcworkspace
-xcuserdata
-profile
-*.moved-aside
-IOS/www/
-
-# OSX
-.DS_Store
-
-# Thumbnails
-._*
-Thumbs.db
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes{\rtf1}

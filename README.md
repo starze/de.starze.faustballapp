@@ -2,13 +2,58 @@
 
 FaustballApp is a Cordova based Android-App. It is linking to all relevant sites of faustball-schwaben. I really appreciate each suggestion for improvement. Pull requests are explicitly whished.
 
+## Build and run
 
-## Build FaustballApp
+### Prepare
 
-1. clone or fork de.starze.faustballapp
-2. install node.js and npm
-3. install cordova
-4. `cordova build`
+1. install android studio
+2. set environment in ```~/.bash_profile``` or ```~/.bashrc```
+   ```
+    export ANDROID_SDK_ROOT=~/Android/Sdk
+    export JAVA_HOME=/opt/android-studio/jre/
+    export PATH=${PATH}:~/Android/Sdk/platform-tools:~/Android/Sdk/tools
+    ```
+3. install node.js and npm
+4. install dependencies
+   ```bash
+   npm i
+   ```
+5. install cordova
+    ```bash
+    npm i -g cordova
+    ```
+6. Update android platform and plugins (optional)
+    ```bash
+    npm run update
+    ```
+7. Prepare .env file for release builds (optional)
+   ```bash
+   cp .env.sample .env
+   vi .env
+   ```
+
+### Build
+
+1. Build debug and release apk
+    ```bash
+    npm run build
+    ```
+
+### Run
+
+1. Run on connected device (or in simulation)
+    ```bash
+    npm start
+    ```
+
+### Deploy
+
+1. build release apk
+   ```bash
+   npm run build:release
+   ```
+2. Upload renamed FaustballApp.apk to Google App Store
+
 
 
 ## Beschreibung im Android-App-Store
