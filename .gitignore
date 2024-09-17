@@ -1,6 +1,10 @@
 # private data
 .env
 starzes-release-key.keystore
+encrypted_private_key_path
+encryption_public_key.pem
+pepk.jar
+.DS_STORE
 
 # unnecessary folders
 plugins/*
